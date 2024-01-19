@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infor Data Lake UI</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/_fonts.css" />
+    <link rel="stylesheet" href="./scss/_fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Connect to Infor Data Lake</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <button class="Button" type="button">
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </button>
+            </div>
+
+            <div class="ConnectorForm">
+              <div class="Instructions">
+                <p>
+                  Most Infor Data Lake users will already have an Infor Compass
+                  JDBC Driver app. Infor Compass is used to send, extract, and
+                  query data to and from the Infor Data Lake.
+                </p>
+                <ol class="InstructionList">
+                  <li class="InstructionList-item">
+                    <p>
+                      Login to your Infor ION API application through ION Desk.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>Select Authorized Apps.</p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Open the app named “<strong
+                        >Infor Compass JDBC Driver</strong
+                      >”.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Click on the Download Credentials button to open a dialog
+                      box.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      In the User Name field, type the first few characters of
+                      your Infor Ming.le user name. Then select your user name
+                      from the type-ahead list.
+                    </p>
+                    <p>
+                      <em
+                        >Note: You must select the user name from the type-ahead
+                        list because the type-ahead values are the user names
+                        registered in Infor Ming.le.</em
+                      >
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Click Download. Two files will be downloaded. Save the
+                      <strong>Infor Compass JDBC Driver.ionapi</strong> file and
+                      the <strong>infor-compass-jdbc-version.jar</strong> file
+                      to a safe and secure location. You will upload the
+                      <strong>Infor Compass JDBC Driver.ionapi</strong> in the
+                      form below.
+                    </p>
+                  </li>
+                </ol>
+                <p>
+                  If you do not have the Infor Compass JDBC Driver app already
+                  installed then follow these steps.
+                </p>
+                <p>You will need to have the role of IONAPI-Administrator.</p>
+                <ol class="InstructionList">
+                  <li class="InstructionList-item">
+                    <p>
+                      Login to your Infor ION API application through ION Desk.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>Select Authorized Apps.</p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Click on the plus icon to add a new app (non-Infor
+                      authorized application).
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Name the app “Infor Compass JDBC Driver”. The name must be
+                      exact.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Use “<strong>Infor Compass JDBC Driver</strong>” for the
+                      description as well.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>Select the Backend Service type</p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>Save the new app</p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      From the Authorized Apps menu, open the new Infor Compass
+                      JDBC driver application.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Click on the Download Credentials button to open a dialog
+                      box.
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>Select Create Service Account.</p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      In the User Name field, type the first few characters of
+                      your Infor Ming.le user name. Then select your user name
+                      from the type-ahead list.
+                    </p>
+                    <p>
+                      <em
+                        >Note: You must select the user name from the type-ahead
+                        list because the type-ahead values are the user names
+                        registered in Infor Ming.le.</em
+                      >
+                    </p>
+                  </li>
+                  <li class="InstructionList-item">
+                    <p>
+                      Click Download. Two files will be downloaded. Save the
+                      <strong>Infor Compass JDBC Driver.ionapi</strong> file and
+                      the <strong>infor-compass-jdbc-version.jar</strong> file
+                      to a safe and secure location. You will upload the
+                      <strong>Infor Compass JDBC Driver.ionapi</strong> in the
+                      field below.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+              <div class="KindForm">
+                <label class="Field"
+                  ><div class="Field-label">Name</div>
+                  <div class="Field-description">Your company name</div>
+                  <input class="Input" type="text" placeholder="" /></label
+                ><label class="Field"
+                  ><div class="Field-label">IONAPI File</div>
+                  <label class="Upload"
+                    ><input type="file" class="Upload-file" />
+                    <div class="Button Upload-fileName">
+                      <span class="Upload-fileNameIcon"
+                        ><i class="Icon fas fa-upload"></i></span
+                      >Select file
+                    </div></label
+                  ></label
+                >
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <button class="Button" type="button">
+                    <i class="Icon fas fa-plus"></i>Create source
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
